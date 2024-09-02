@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Sistema de Comunicación y Soporte</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0 d-flex flex-column h-100">
+      <!-- BARRA NAVEGACIÓN -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand me-2" href="#">Sistema de Comunicación</a>
+        <div class="container-fluid">
+          
+          <button
+            class="navbar-toggler order-0 ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Página Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Manuales y Tutoriales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Calendario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Administración de perfil de usuario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Organigrama de la empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chat para vendedores y equipo de soporte</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row g-0 flex-grow-1 overflow-hidden">
+        <!-- LLISTA DE CONVERSACIONES -->
+        <div class="col-md-4 col-lg-3 bg-light border-end p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5>Chats Recientes</h5>
+    
+          </div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar conversaciones"
+              aria-label="Buscar conversaciones"
+            />
+          </div>
+          <div id="chatList" class="chat-list flex-grow-1">
+            <!-- ITEMS DE CHAT -->
+            <div
+              class="chat-item p-2 mb-2 rounded bg-white d-flex align-items-center"
+            >
+              <img
+                src="./assets/img/juan_pablo.jpg"
+                alt="Foto de Juan pablo"
+                class="rounded-circle me-2"
+                width="50"
+                height="50"
+              />
+              <div class="flex-grow-1 ms-3">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <strong>Juan Pérez</strong>
+                    <p class="mb-0">Hola, ¿cómo estás? 🤔</p>
+                  </div>
+                  <small class="text-active">Ahora</small>
+                </div>
+              </div>
+            </div>
+            <div
+            class="chat-item p-2 mb-2 rounded bg-white d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/alberto.jpg"
+              alt="Foto de Alberto"
+              class="rounded-circle me-2"
+              width="50"
+              height="50"
+            />
+            <div class="flex-grow-1 ms-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Alberto</strong>
+                  <p class="mb-0">Reaccionaste con 😢 a "Es que no sabía que iba a..."</p>
+                </div>
+                <small class="text-muted">14:45</small>
+              </div>
+            </div>
+          </div>
+          <div
+          class="chat-item p-2 mb-2 rounded bg-white d-flex align-items-center"
+        >
+          <img
+            src="./assets/img/juanita.jpg"
+            alt="Foto de Juanita"
+            class="rounded-circle me-2"
+            width="50"
+            height="50"
+          />
+          <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Juanita</strong>
+                <p class="mb-0">Hola buenas tardes, paso el dato...</p>
+              </div>
+              <small class="text-muted">13:10</small>
+            </div>
+          </div>
+        </div>
+        <div
+        class="chat-item p-2 mb-2 rounded bg-white d-flex align-items-center"
+      >
+        <img
+          src="./assets/img/Magdalena.jpg"
+          alt="Foto de Magdalena"
+          class="rounded-circle me-2"
+          width="50"
+          height="50"
+        />
+        <div class="flex-grow-1 ms-3">
+          <div class="d-flex justify-content-between">
+            <div>
+              <strong>Magdalena</strong>
+              <p class="mb-0">Buenas tardes vecino, será que me puedes apoyar con un like?</p>
+            </div>
+            <small class="text-muted">Ayer</small>
+          </div>
+        </div>
+      </div>
+      <div
+      class="chat-item p-2 mb-2 rounded bg-white d-flex align-items-center"
+    >
+      <img
+        src="./assets/img/Gonzalo.jpg"
+        alt="Foto de Gonzalo"
+        class="rounded-circle me-2"
+        width="50"
+        height="50"
+      />
+      <div class="flex-grow-1 ms-3">
+        <div class="d-flex justify-content-between">
+          <div>
+            <strong>Gonzalo</strong>
+            <p class="mb-0">Hola vecino. Aún disponible lo que regalaba por el grupo?</p>
+          </div>
+          <small class="text-muted">sábado</small>
+        </div>
+      </div>
+    </div>
+    <div
+    class="chat-item p-2 mb-2 rounded bg-white d-flex align-items-center"
+  >
+    <img
+      src="./assets/img/maria_jose.jpg"
+      alt="Foto de María José"
+      class="rounded-circle me-2"
+      width="50"
+      height="50"
+    />
+    <div class="flex-grow-1 ms-3">
+      <div class="d-flex justify-content-between">
+        <div>
+          <strong>María José</strong>
+          <p class="mb-0">Sí vecino, aún me quedan cervezas</p>
+        </div>
+        <small class="text-muted">viernes</small>
+      </div>
+    </div>
+  </div>
+  <div
+  class="chat-item p-2 mb-2 rounded bg-white d-flex align-items-center"
+>
+  <img
+    src="./assets/img/cristian.jpg"
+    alt="Foto de Cristian"
+    class="rounded-circle me-2"
+    width="50"
+    height="50"
+  />
+  <div class="flex-grow-1 ms-3">
+    <div class="d-flex justify-content-between">
+      <div>
+        <strong>Cristian</strong>
+        <p class="mb-0">Te conectarás para que juguemos? </p>
+      </div>
+      <small class="text-muted">viernes</small>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+
+        <!-- CONVERSACIÓN PRINCIPAL -->
+        <div class="col-md-8 col-lg-9 p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-3" >
+            <div class="d-flex align-items-center">
+              <img
+                src="./assets/img/juan_pablo.jpg"
+                alt="Foto de perfil"
+                class="rounded-circle me-2"
+                width="50"
+                height="50"
+              />
+              <h5 class="mb-0">Juan Pérez</h5>
+            </div>
+          </div>
+          <div id="chatWindow" class="chat-window mb-3 flex-grow-1">
+            <!-- MENSAJES CHATS -->
+            <div class="d-flex justify-content-end mb-3">
+              <div class="message bg-primary text-white p-2 rounded">
+                Hola, ¿cómo estás? 🤔
+              </div>
+            </div>
+            <div class="d-flex justify-content-start mb-3">
+              <div class="message bg-secondary text-white p-2 rounded">
+                ¡Hola! Todo bien, ¿y tú? 😃
+              </div>
+            </div>
+            <div class="d-flex justify-content-end mb-3">
+              <div class="message bg-primary text-white p-2 rounded">
+                Bien bien, gracias 😊
+              </div>
+            </div>
+            <div class="d-flex justify-content-start mb-3">
+              <div class="message bg-secondary text-white p-2 rounded">
+                ¡Genial! 🤩
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-group mb-3">
+              <button class="btn btn-outline-secondary" type="button">
+                <i class="fas fa-paperclip"></i>
+              </button>
+  
+            <input
+              type="text"
+              id="messageInput"
+              class="form-control"
+              placeholder="Escribe un mensaje..."
+            />
+            <button
+              class="btn btn-primary"
+              type="button"
+              id="sendMessageButton"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-auto bg-dark text-white text-center py-3">
+        <h6>Todos los derechos reservados ® Isaías Miranda 2024</h6>
+        <h5>Sígueme:</h5>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/isamchdg/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/isamirandaDG/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://github.com/itate32" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.behance.net/iamchdg" target="_blank"
+            ><i class="fab fa-behance"></i
+          ></a>
+          <a href="https://500px.com/p/iamchdg" target="_blank"
+            ><i class="fa-brands fa-500px"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/613a98851a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
